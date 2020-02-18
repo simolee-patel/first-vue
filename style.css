@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: century gothic;
+}
+#msg {
+  font-size: 25px;
+  font-weight: 600;
+}
+#app {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  color: aliceblue;
+  background-color: midnightblue;
+  box-shadow: 0px 5px 15px 4px grey;
+}
+
+.container {
+  margin-left: 29px;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 300px;
+  height: 400px;
+  background: #000;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.box .imgbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.box .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.box:hover .imgbx img {
+  opacity: 0;
+}
+.box .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.box:hover .content {
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+}
+.box .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.box .content p {
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+}
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
